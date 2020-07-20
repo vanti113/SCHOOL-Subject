@@ -1,0 +1,74 @@
+.leftBar {
+  position: fixed;
+  top: 80px;
+  width: 13%;
+  height: 100%;
+  background-color: #464646;
+  padding: 10px 0px;
+}
+.leftBar i {
+  margin-right: 10px;
+}
+.leftBar__title {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  color: #f1f1f1;
+  font-size: 25px;
+  margin-bottom: 25px;
+  margin-left: 15px;
+}
+.leftBar__project1 i,
+.leftBar__project2 i {
+  margin-left: 15px;
+}
+.leftBar__project1,
+.leftBar__project2 {
+  font-size: 23px;
+  color: #f1f1f1;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  transition: 0.4s;
+  overflow: hidden;
+}
+.leftBar__project1:hover,
+.leftBar__project2:hover,
+.contents1:hover,
+.contents2:hover {
+  background-color: #21759b;
+}
+.leftBar__contents2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.leftBar__contents1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.contents1 {
+  width: 90%;
+  height: 0px;
+  background-color: #636363;
+  transition: 0.5s;
+}
+.contents1,
+.contents2 {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 0px;
+  background-color: #636363;
+  transition: 0.5s;
+  text-align: left;
+  font-size: 20px;
+  color: #f1f1f1;
+}

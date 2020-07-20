@@ -1,0 +1,74 @@
+.bookTable__add {
+  background-color: #ffffff;
+  padding: 10px 10px;
+  width: 100%;
+}
+.bookTable__add__form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.bookTable__add__form__ul {
+  display: flex;
+  flex-direction: column;
+}
+.bookTable__add__form__ul li {
+  margin: 20px 10px;
+  display: flex;
+  flex-direction: column;
+}
+.bookTable__add__form__ul input {
+  margin-top: 5px;
+  min-width: 550px;
+  width: 600px;
+  height: 45px;
+  border: 2px solid rgb(94, 94, 94);
+  border-radius: 5px;
+  text-align: left;
+  font-size: 18px;
+  color: rgb(94, 94, 94);
+  font-weight: 700;
+}
+.bookTable__add__form__ul label {
+  font-size: 20px;
+  color: grey;
+}
+.bookTable__add__buttons {
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+  margin-left: 40px;
+}
+.bookTable__add__buttons input {
+  width: 100px;
+  height: 45px;
+  margin: 0px 10px;
+  font-size: 17px;
+  font-weight: 800;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background-color: #0984e3;
+  color: rgb(58, 58, 58);
+}
+.bookTable__add__buttons input:nth-child(2) {
+  background-color: #ff7675;
+}
+.bookTable__add__buttons input:hover {
+  background-color: #095ea0;
+  color: white;
+}
+.bookTable__add__buttons input:nth-child(2):hover {
+  background-color: #914242;
+  color: white;
+}
+.bookTable__add__buttons input:active,
+.bookTable__add__buttons input:nth-child(2):active {
+  background-color: grey;
+  color: black;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

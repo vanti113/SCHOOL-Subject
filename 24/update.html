@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update page</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__title center">
+        <i class="fas fa-bars BAR"></i
+        ><span class="header__title_title">Web図書管理システム</span>
+      </div>
+      <form
+        action="http://localhost:81/school/24/search.php"
+        method="POST"
+        class="header__form center"
+      >
+        <input class="header__search" type="text" / placeholder="キーワード検索"
+        required>
+        <input
+          class="header__search__button"
+          type="submit"
+          value="Search"
+          required
+        />
+      </form>
+      <a href="http://localhost:81/school/24/main.php"
+        ><i class="fas fa-home"></i
+      ></a>
+    </header>
+    <main>
+      <section class="sideBar">
+        <div class="sidebar__top">
+          <div class="sidebar__top__icon center">
+            <i class="fas fa-book-reader"></i>
+          </div>
+          <span>管理 Page</span>
+        </div>
+        <div class="sideBar__link">
+          <a href="http://localhost:81/school/24/main.php"
+            ><i class="fas fa-book"></i><span>All Books</span></a
+          >
+          <a href="http://localhost:81/school/24/add.php"
+            ><i class="fas fa-file-alt"></i><span>Add Book</span></a
+          >
+        </div>
+      </section>
+      <section class="bookTable">
+        <div class="bookTable__title">
+          <span class=""
+            ><i class="fas fa-chevron-right"> 図書データ変更</i></span
+          >
+        </div>
+        <div class="bookTable__add">
+          <form action="http://localhost:81/school/24/update.php" method="POST">
+            <div class="bookTable__add__form">
+              <ul class="bookTable__add__form__ul">
+                <li>
+                  <label>ISBN</label
+                  ><input
+                    type="text"
+                    name="isbn"
+                    id="isbn"
+                    maxlength="13"
+                    pattern="^[A-Za-z0-9+]*$"
+                    required
+                  />
+                </li>
+                <li>
+                  <label>図書名</label
+                  ><input type="text" name="name" pattern="^[^<>]+$" required />
+                </li>
+                <li>
+                  <label>著者名</label
+                  ><input
+                    type="text"
+                    name="author"
+                    pattern="^[^<>]+$"
+                    required
+                  />
+                </li>
+                <li>
+                  <label>出版社</label
+                  ><input type="text" pattern="^[^<>]+$" name="pub" required />
+                </li>
+              </ul>
+              <ul class="bookTable__add__form__ul">
+                <li>
+                  <label>価格</label
+                  ><input
+                    type="number"
+                    name="price"
+                    pattern="^[^<>]+$"
+                    required
+                  />
+                </li>
+                <li>
+                  <label>出版日</label
+                  ><input
+                    type="date"
+                    name="pubdate"
+                    pattern="^[A-Za-z0-9+]*$"
+                    required
+                  />
+                </li>
+                <li>
+                  <label>購入日</label
+                  ><input
+                    type="date"
+                    name="buydate"
+                    pattern="^[A-Za-z0-9+]*$"
+                    required
+                  />
+                </li>
+                <li>
+                  <label>画像URL</label
+                  ><input type="text" name="url" pattern="^[^<>]+$" />
+                </li>
+              </ul>
+            </div>
+            <div class="bookTable__add__buttons">
+              <input type="submit" value="登録" />
+              <input type="reset" value="RESET" />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="./js/sidebar.js"></script>
+    <script src="./js/preventIsbn.js"></script>
+  </body>
+</html>

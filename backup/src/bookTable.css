@@ -1,0 +1,25 @@
+.bookTable {
+  margin-left: 15vw;
+
+  width: 85vw;
+  background-color: #dfe6e9;
+  padding: 10px 15px;
+  transition: 0.8s;
+}
+.bookTable__title {
+  color: #6f7577;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5px;
+}
+.bookTable__search {
+  color: #6f7577;
+  font-size: 20px;
+  padding: 10px 5px;
+  margin-left: 20px;
+}
+.bookTable__keywords {
+  margin-right: 10px;
+}

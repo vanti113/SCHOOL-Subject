@@ -1,0 +1,29 @@
+.table5 button {
+  width: 50px;
+  height: 50px;
+  margin: 20px 0px;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  outline: none;
+  font-size: 20px;
+}
+
+.bookTable__button__update {
+  background-color: #74b9ff;
+}
+.bookTable__button__update:hover {
+  background-color: #3e6185;
+  color: white;
+}
+.bookTable__button__delete {
+  background-color: #d63031;
+}
+.bookTable__button__delete:hover {
+  background-color: #772a2a;
+  color: white;
+}
+.table5 button:active {
+  background-color: white;
+  color: black;
+}

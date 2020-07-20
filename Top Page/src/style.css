@@ -1,0 +1,23 @@
+@import "reset.css";
+@import "header.css";
+@import "leftBar.css";
+@import "rightContents.css";
+
+html,
+body {
+  width: 100%;
+  background-color: #e1efef;
+  font-family: "Roboto", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  scroll-behavior: smooth;
+}
+i {
+  color: #d1d1d1;
+}
+
+.hide {
+  height: 40px;
+}
+.show {
+  display: block;
+}

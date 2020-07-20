@@ -1,0 +1,47 @@
+.bookTable__content {
+  background-color: #ffffff;
+  padding: 10px 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.bookTable__content:nth-child(2n + 1) {
+  background-color: rgb(240, 240, 240);
+}
+.bookTable__content:hover {
+  background-color: rgb(224, 213, 213);
+}
+.bookTable__content li {
+  margin: 15px 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: rgb(83, 83, 83);
+}
+.bookTable__content li span {
+  font-size: 17px;
+  font-weight: 500;
+}
+img {
+  width: 90px;
+  height: 120px;
+  border-radius: 10px;
+}
+.table1 {
+  width: 10%;
+  border-right: 0.5px solid green;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.table2 {
+  width: 45%;
+}
+.table3 {
+  width: 25%;
+}
+.table4 {
+  width: 15%;
+}
+.table5 {
+  width: 4%;
+}

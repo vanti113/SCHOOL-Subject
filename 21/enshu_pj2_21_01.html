@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      演習２０：フォームを通してデータベース内のデータ一覧をブラウザ上に表示するPHPプログラム(作成者：ベキゴン)
+    </title>
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main>
+      <h1>
+        <i class="fas fa-database"></i>
+        図書データベース検索演習
+        <i class="fab fa-php"></i>
+      </h1>
+      <form
+        action="http://localhost:81/school/21/enshu_pj2_21_01.php"
+        method="post"
+      >
+        <input
+          class="textBar"
+          type="text"
+          name="keyword"
+          size="40"
+          minlength="1"
+          placeholder="キーワードを入力してください。"
+        />
+        <br /><br />
+        <input class="subBtn" type="submit" value="検索" />
+      </form>
+    </main>
+  </body>
+</html>

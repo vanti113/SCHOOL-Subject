@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Project : Search page</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__title center">
+        <i class="fas fa-bars BAR"></i
+        ><span class="header__title_title">Web図書管理システム</span>
+      </div>
+      <form
+        action="http://localhost:81/school/24/search.php"
+        method="POST"
+        class="header__form center"
+      >
+        <input class="header__search" type="text" /
+        placeholder="キーワード検索">
+        <input class="header__search__button" type="submit" value="Search" />
+      </form>
+      <a href="http://localhost:81/school/24/main.php"
+        ><i class="fas fa-home"></i
+      ></a>
+    </header>
+    <main>
+      <section class="sideBar">
+        <div class="sidebar__top">
+          <div class="sidebar__top__icon center">
+            <i class="fas fa-book-reader"></i>
+          </div>
+          <span>管理 Page</span>
+        </div>
+        <div class="sideBar__link">
+          <a href="http://localhost:81/school/24/main.php"
+            ><i class="fas fa-book"></i><span>All Books</span></a
+          >
+          <a href="http://localhost:81/school/24/add.php"
+            ><i class="fas fa-file-alt"></i><span>Add Book</span></a
+          >
+        </div>
+      </section>
+      <section class="bookTable">
+        <div class="bookTable__title">
+          <span class=""><i class="fas fa-chevron-right"> 検索 データ</i></span>
+          <span>総 ??件</span>
+        </div>
+        <div class="bookTable__search">
+          <span>
+            <i class="fas fa-chevron-right">
+              キーワード：
+              <span id="word1" class="bookTable__keywords"></span>
+              || <span class="bookTable__keywords"></span>除外キーワード：
+              <span id="word2" class="bookTable__keywords"></span>
+            </i>
+          </span>
+        </div>
+        <div class="bookTable__content">
+          <div class="table1">
+            <span>1</span>
+            <img src="noimg.jpg" />
+          </div>
+          <div class="table2">
+            <ul>
+              <li>
+                書籍名：<span
+                  >秘伝HTML, CGI, PerlによるWebプログラミング / Ed Tittel [ほか]
+                  著 ; 臼田昭司 [ほか] 訳</span
+                >
+              </li>
+              <li>著者名：<span>Tittel, Ed</span></li>
+              <li>出版社：<span>ビー・エヌ・エヌ</span></li>
+            </ul>
+          </div>
+          <div class="table3">
+            <ul>
+              <li>出版日：<span>1997-11-18</span></li>
+              <li>購入日：<span>1997-08-01</span></li>
+              <li>ISBN：<span>4893695576</span></li>
+            </ul>
+          </div>
+          <div class="table4">
+            <ul>
+              <li>価格：<span>6982</span>円</li>
+            </ul>
+          </div>
+          <div class="table5">
+            <form
+              action="http://localhost:81/school/24/test.php"
+              id="update1"
+              method="GET"
+            >
+              <input type="hidden" name="update" value="ISBN" />
+            </form>
+            <button
+              class="bookTable__button__update center"
+              type="submit"
+              form="update1"
+            >
+              <i class="fas fa-edit"></i>
+            </button>
+            <form
+              action="http://localhost:81/school/24/test.php"
+              method="GET"
+              id="delete1"
+            >
+              <input type="hidden" name="delete" value="ISBN" />
+            </form>
+            <button
+              class="bookTable__button__delete center"
+              type="submit"
+              form="delete1"
+            >
+              <i class="fas fa-trash-alt"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/sidebar.js"></script>
+    <script src="./js/noimg.js"></script>
+    <script src="./js/searchWord.js"></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+.headerLine {
+  width: 100%;
+  position: fixed;
+  height: 80px;
+  background-color: #464646;
+  padding: 0px 15px;
+  z-index: 2;
+}
+.headerLine__title {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  color: #f1f1f1;
+}
+.headerLine__title__icon {
+  margin-right: 10px;
+}

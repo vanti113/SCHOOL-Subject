@@ -1,0 +1,46 @@
+@import "reset.css";
+@import "header.css";
+@import "sideBar.css";
+@import "bookTable.css";
+@import "table.css";
+@import "buttons.css";
+@import "add.css";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  /* background-color: #dfe6e9; */
+}
+main {
+  margin-top: 80px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+span {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
+.hide {
+  left: -250px;
+}
+.stretch {
+  margin-left: unset;
+  width: 100vw;
+}
+.vanish {
+  display: none;
+}
+.BAR {
+  transition: 0.5s;
+}
+.turn {
+  transform: rotate(90deg);
+}
